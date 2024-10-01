@@ -22,7 +22,6 @@ logging.basicConfig(level=logging.INFO, filename='clinical_trials.log', filemode
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Set your OpenAI API key securely
-openai.api_key = os.getenv('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')
 if not openai.api_key:
     st.error("OpenAI API key not found. Please set the OPENAI_API_KEY environment variable.")
     st.stop()
